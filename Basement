@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boardgame Usado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Boardgames Usados</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produtos">Jogos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Compre e venda boardgames usados com segurança!</h2>
+    <p>Jogos em ótimo estado, preços acessíveis, entrega para todo o Brasil.</p>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Jogos Disponíveis</h2>
+    <div class="grid">
+      <div class="produto">
+        <img src="imagens/catan.jpg" alt="Catan">
+        <h3>Catan</h3>
+        <p>R$ 150,00 - Usado, excelente estado</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="imagens/ticket.jpg" alt="Ticket to Ride">
+        <h3>Ticket to Ride</h3>
+        <p>R$ 130,00 - Completo, pouco uso</p>
+        <button>Comprar</button>
+      </div>
+      <!-- Adicione mais jogos aqui -->
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Boardgames Usados. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+  background: #ddd;
+}
+
+.produtos {
+  padding: 40px;
+  background: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.contato {
+  padding: 40px;
+  background: #eee;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
